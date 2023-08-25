@@ -1,5 +1,3 @@
-hola mundo 
+Hola Mundo
 
-cambio erick
-
-cambio en git
+Cambio de Erick
