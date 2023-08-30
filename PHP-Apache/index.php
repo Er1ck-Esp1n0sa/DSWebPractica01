@@ -1,11 +1,10 @@
 <?php
-$host = 'localhost'; // Cambia esto si el contenedor se ejecuta en otra máquina
-$port = '5432';
-$dbname = 'nombre_de_la_base_de_datos';
+$host = 'localhost';
+$dbname = 'mydb';
 $user = 'postgres'; // Usuario por defecto de PostgreSQL
-$password = 'contraseña'; // La contraseña que configuraste
+$password = 'postgres'; // La contraseña que configuraste
 
-$dsn = "pgsql:host=$host;port=$port;dbname=$dbname;user=$user;password=$password";
+$dsn = "pgsql:host=$host;dbname=$dbname;user=$user;password=$password";
 
 try {
     $pdo = new PDO($dsn);
