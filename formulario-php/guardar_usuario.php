@@ -8,10 +8,12 @@ if (!$conexion) {
 
 // Obtener datos del formulario
 $nombre = $_POST['nombre'];
-$email = $_POST['email'];
+$direccion = $_POST['direccion'];
+$telefono = $_POST['telefono'];
+$correo = $_POST['correo'];
 
 // Insertar datos en la tabla
-$query = "INSERT INTO usuarios (nombre, email) VALUES ('$nombre', '$email')";
+$query = "INSERT INTO usuarios (nombre, direccion, telefono, correo) VALUES ('$nombre', '$direccion', '$telefono', '$correo')";
 $resultado = pg_query($conexion, $query);
 
 if ($resultado) {
